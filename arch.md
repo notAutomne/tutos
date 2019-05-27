@@ -99,8 +99,8 @@ FONT=lat9w-16
 8) `hwclock --systohc --utc`
 9) On définit l'hostname avec `echo "NomDeLaMachineXD" > /etc/hostname`
 10) On crée les images d'init: `mkinitcpio -p linux`
-11) On crée le fichier de config de GRUB: `grub-mkconfig -o /boot/grub/grub.cfg`
-12) On crée l'image EFI de GRUB: `grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=arch_grub --recheck`
+11) On crée l'image EFI de GRUB: `grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=arch_grub --recheck`
+12) On crée le fichier de config de GRUB: `grub-mkconfig -o /boot/grub/grub.cfg`
 13) On met l'image par défaut: `mkdir /boot/EFI/boot`
 `cp /boot/EFI/arch_grub/grubx64.efi /boot/EFI/boot/bootx64.efi`
 14) On édite le fichier /etc/pacman.conf en ajoutant à la fin
